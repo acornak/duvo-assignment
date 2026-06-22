@@ -1,0 +1,20 @@
+.page { max-width: 980px; margin: 0 auto; padding: 24px; }
+.h1 { font-size: 20px; margin: 0 0 4px; }
+.sub { color: var(--muted); margin: 0 0 20px; font-size: 13px; }
+.panel { background: var(--panel); border: 1px solid var(--border); border-radius: 10px; padding: 16px; margin-bottom: 16px; }
+.row { display: flex; gap: 12px; align-items: center; }
+.between { justify-content: space-between; }
+.label { font-size: 12px; color: var(--muted); display: block; margin-bottom: 4px; }
+.textarea { width: 100%; min-height: 90px; background: #0c0e12; color: var(--text); border: 1px solid var(--border); border-radius: 8px; padding: 10px; font-size: 14px; }
+.input { width: 100%; background: #0c0e12; color: var(--text); border: 1px solid var(--border); border-radius: 8px; padding: 8px; font-size: 13px; }
+.btn { background: var(--accent); color: white; border: 0; border-radius: 8px; padding: 10px 16px; font-size: 14px; cursor: pointer; }
+.btn:disabled { opacity: 0.5; cursor: default; }
+.btnGhost { background: transparent; color: var(--text); border: 1px solid var(--border); border-radius: 8px; padding: 6px 12px; cursor: pointer; }
+.list { list-style: none; padding: 0; margin: 0; }
+.listItem { padding: 10px 0; border-bottom: 1px solid var(--border); display: flex; justify-content: space-between; gap: 12px; }
+.badge { font-size: 11px; padding: 2px 8px; border-radius: 999px; border: 1px solid var(--border); }
+.pass { color: var(--green); border-color: var(--green); }
+.fail { color: var(--red); border-color: var(--red); }
+.running { color: var(--amber); border-color: var(--amber); }
+.muted { color: var(--muted); font-size: 12px; }
+.switch { cursor: pointer; }
