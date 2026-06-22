@@ -99,7 +99,7 @@ export default function Home() {
                 />{" "}
                 {c.name}
               </label>
-              <span className={c.configured ? styles.pass : styles.running + " " + styles.badge}>
+              <span className={`${styles.badge} ${c.configured ? styles.pass : styles.running}`}>
                 {c.configured ? "configured" : "needs token + page id"}
               </span>
             </div>

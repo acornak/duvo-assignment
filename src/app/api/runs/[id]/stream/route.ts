@@ -39,6 +39,7 @@ export async function GET(_request: Request, { params }: { params: Promise<{ id:
       const unsubscribe = bus.subscribe(id, (e: RunEvent) => {
         send("event", e);
         if (e.kind === "done") {
+          clearInterval(keepalive);
           unsubscribe();
           closed = true;
           try {
