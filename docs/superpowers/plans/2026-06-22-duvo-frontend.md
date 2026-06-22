@@ -1629,6 +1629,7 @@ git commit -m "feat: connections list/update API"
 .running { color: var(--amber); border-color: var(--amber); }
 .muted { color: var(--muted); font-size: 12px; }
 .switch { cursor: pointer; }
+```
 
 - [ ] **Step 2: Create `src/app/page.tsx`**
 
