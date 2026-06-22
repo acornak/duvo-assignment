@@ -1,7 +1,7 @@
 import type { Connection } from "@/lib/types";
 
 export function buildSystemPrompt(connections: Connection[]): string {
-  const notion = connections.find((c) => c.id === "notion" && c.enabled);
+  const notion = connections.find((c) => c.id === "notion" && c.enabled && c.token && c.parentPageId);
   const lines: string[] = [
     "You are an automation agent for the duvo.ai platform.",
     "You complete the user's task end-to-end using your available tools.",
